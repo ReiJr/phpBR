@@ -10,7 +10,7 @@ if($method == 'POST'){
 	//$text = $json->queryResult->parameters->text;
 	$servico = $json->queryResult->parameters->servico;
 	switch ($text) {
-		case 'Eu quero $servico':
+		case 'Eu quero arrumar minha torneira':
 			$speech = "Olá, a Porto Faz consegue ajudar com $servico, quer mais detalhe que sobre o serviço?";
 			break;
 
