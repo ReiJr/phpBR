@@ -8,10 +8,10 @@ if($method == 'POST'){
 	$json = json_decode($requestBody);
 	$text = $json->queryResult->queryText;
 	//$text = $json->queryResult->parameters->text;
-
+	$servico = $json->queryResult->parameters->servico;
 	switch ($text) {
-		case 'Quero arrumar minha torneira':
-			$speech = "Olá, a Porto Faz consegue ajudar com arrumar torneira, quer mais detalhe que sobre o serviço?";
+		case 'Eu quero $servico':
+			$speech = "Olá, a Porto Faz consegue ajudar com $servico, quer mais detalhe que sobre o serviço?";
 			break;
 
 		case 'Quero arrumar meu fogão':
