@@ -8,16 +8,16 @@ if($method == 'POST'){
 	$json = json_decode($requestBody);
 
 	$text = $json->queryResult->parameters->text;
-	
+
 	switch ($text) {
 		case 'hi':
 			$speech = "Hi, Nice to meet you";
 			break;
-			
+
 		case 'bye':
 			$speech = "Bye, good night";
 			break;
-			
+
 		case 'anything':
 			$speech = "Yes, you can type anything here.";
 			break;
@@ -26,7 +26,7 @@ if($method == 'POST'){
 			$speech = "Sorry, I didnt get that. Please ask me something else.";
 			break;
 	}
-*/
+
 	$response = new \stdClass();
 	$response->fulfillmentText = $speech;
 	//$response->displayText = $speech;
