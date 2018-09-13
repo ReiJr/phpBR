@@ -14,8 +14,8 @@ if($method == 'POST'){
 			$speech = "Olá, a Porto Faz consegue ajudar com $servico, quer mais detalhe que sobre o serviço?";
 			break;
 
-		case 'Quero arrumar meu fogão':
-			$speech = "Olá, a Porto Faz consegue ajudar com arrumar fogão, quer mais detalhe que sobre o serviço?";
+		case 'Eu quero arrumar meu fogão':
+			$speech = "Olá, a Porto Faz consegue ajudar com $servico, quer mais detalhe que sobre o serviço?";
 			break;
 
 		case 'anything':
@@ -23,7 +23,7 @@ if($method == 'POST'){
 			break;
 		
 		default:
-			$speech = "Sorry, I didnt get that. Please ask me something else.";
+			$speech = "Desculpe, eu não entendi, por favor pode repetir?";
 			break;
 	}
 
